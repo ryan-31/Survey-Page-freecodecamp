@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<style>
+body {
+  text-align: center;
+  background-color:#ADD8E6;
+}
+#title {
+  font-family: Helvetica;
+}
+#description {
+  font-size: 16px;
+  font-family: Courier;
+}
+label {
+  font-family: monospace;
+}
+#dropdown{
+  font-family: Helvetica;
+
+}
+p {
+  font-family: Courier;
+}
+</style>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id = "title"> Code Experience Survey </h1>
+<p id = "description"> Complete this survey to give us an idea of your coding experience </p>
+
+<form id = "survey-form">
+  <label id = "name-label" for = "name">Name: </label><input id = "name" type="text" placeholder="Enter your name" required> <br><br>
+  <label id = "email-label" for = "email">Email: </label> <input id = "email" type= "email" placeholder = "Enter your email adress" required>
+  <br><br><label id = "number-label" for = "number"required>Age: </label><input id = "number" type = "number" placeholder = "Enter your age" min = "1" max = "200" required>
+  <br><br><label id = "dropdown-label" for = "dropdown">First Language: </label> <select id = "dropdown">
+  <option disabled="" selected="" value="">Select an option</option>
+  <option>HTML/CSS</option>
+  <option>C</option>
+  <option>Python</option>
+  <option>C++</option>
+  <option>JavaScript</option>
+  <option>Java</option>
+  <option>Other</option>
+  </select>
+  <br>
+  <p>Select the languages that you are proficient in: </p>
+  <label>HTML/CSS</label>
+  <input type = "radio" name = "language" value = "HTML/CSS"><br>
+  <label>Python</label>
+  <input type = "radio" name = "language" value = "Python"><br>
+  <label> JavaScript </label>
+  <input type = "radio" name = "language" value = "JavaScript"><br>
+  <label> Java </label>
+  <input type = "radio" name = "language" value = "Java"><br>
+    <p>Select the languages that you want to learn: </p>
+  <label>HTML/CSS</label>
+  <input type = "checkbox" name = "language" value = "HTML/CSS"><br>
+  <label>Python</label>
+  <input type = "checkbox" name = "language" value = "Python"><br>
+  <label> JavaScript </label>
+  <input type = "checkbox" name = "language" value = "JavaScript"><br>
+  <label> Java </label>
+  <input type = "checkbox" name = "language" value = "Java"><br>
+  <textarea>Any comments?</textarea> <br>
+  <button id = "submit">Submit</button>
+
+</form>
+
+</html>
